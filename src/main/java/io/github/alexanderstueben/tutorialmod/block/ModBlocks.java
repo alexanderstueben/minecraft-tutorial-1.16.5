@@ -41,6 +41,17 @@ public class ModBlocks {
         )
     );
 
+    public static final RegistryObject<Block> FIRESTONE_BLOCK = registerBlocks("firestone_block",
+        () -> new FirestoneBlock(
+            AbstractBlock.Properties.of(Material.STONE)
+            .harvestLevel(2)
+            .harvestTool(ToolType.PICKAXE)
+            .requiresCorrectToolForDrops()
+            .strength(3f)
+            .sound(SoundType.STONE)
+        )
+    );
+
     private static <T extends Block>RegistryObject<T> registerBlocks(String name, Supplier<T> block) {
         RegistryObject<T> registryObject = BLOCKS.register(name, block);
         registerBlockItem(name, registryObject);
