@@ -51,7 +51,7 @@ public class Firestone extends Item {
         World world = context.getLevel();
         BlockPos blockPos = context.getClickedPos().relative(context.getClickedFace());
 
-        if (AbstractFireBlock.canBePlacedAt(world, context.getClickedPos(), context.getHorizontalDirection())) {
+        if (AbstractFireBlock.canBePlacedAt(world, blockPos, context.getHorizontalDirection())) {
             world.playSound(
                 playerentity,
                 blockPos,
