@@ -8,6 +8,7 @@ import io.github.alexanderstueben.tutorialmod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -48,6 +49,18 @@ public class ModBlocks {
             .harvestTool(ToolType.PICKAXE)
             .requiresCorrectToolForDrops()
             .strength(3f)
+            .sound(SoundType.STONE)
+        )
+    );
+
+    public static final RegistryObject<Block> AMETHYST_STAIRS = registerBlocks("amethyst_stairs",
+        () -> new StairsBlock(
+            () -> AMETHYST_BLOCK.get().defaultBlockState(),
+            AbstractBlock.Properties.of(Material.METAL)
+            .harvestLevel(2)
+            .harvestTool(ToolType.PICKAXE)
+            .requiresCorrectToolForDrops()
+            .strength(5f, 6f)
             .sound(SoundType.STONE)
         )
     );

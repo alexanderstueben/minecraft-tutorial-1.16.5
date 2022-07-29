@@ -1,5 +1,6 @@
 package io.github.alexanderstueben.tutorialmod.item;
 
+import io.github.alexanderstueben.tutorialmod.util.TutorialTags;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -66,6 +67,6 @@ public class Firestone extends Item {
     }
 
     private boolean blockIsValidForResistance(BlockState clickedBlock) {
-        return clickedBlock.getBlock() == Blocks.OBSIDIAN;
+        return clickedBlock.is(TutorialTags.Blocks.FIRESTONE_CLICKABLE);
     }
 }
