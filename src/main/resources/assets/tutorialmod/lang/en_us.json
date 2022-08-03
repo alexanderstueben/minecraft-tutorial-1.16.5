@@ -5,5 +5,9 @@
   "block.tutorialmod.amethyst_block": "Amethyst Block",
   "block.tutorialmod.firestone_block": "Firestone Block",
   "block.tutorialmod.amethyst_stairs": "Amethyst Stairs",
-  "itemGroup.tutorialModTab": "Tutorial Mod"
+  "block.tutorialmod.amethyst_fence": "Amethyst Fence",
+  "block.tutorialmod.amethyst_fence_gate": "Amethyst Fence Gate",
+  "itemGroup.tutorialModTab": "Tutorial Mod",
+  "tooltip.tutorialmod.firestone": "Hold \u00A7eSHIFT\u00A7r for more Information!",
+  "tooltip.tutorialmod.firestone.shift": "Might set you on fire. But also might protect from it!"
 }
